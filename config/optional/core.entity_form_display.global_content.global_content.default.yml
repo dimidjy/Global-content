@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.global_content.global_content.field_plain_text
+  module:
+    - global_content
+id: global_content.global_content.default
+targetEntityType: global_content
+bundle: global_content
+mode: default
+content:
+  field_plain_text:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  status: true
+  user_id: true

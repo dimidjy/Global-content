@@ -1,0 +1,16 @@
+
+# Global content menu items definition
+entity.global_content.collection:
+  title: 'Global content list'
+  route_name: entity.global_content.collection
+  description: 'List Global content entities'
+  parent: system.admin_config_system
+  weight: 300
+
+global_content.admin.config.settings:
+  title: 'Global content settings'
+  description: 'Configure Global content entities'
+  route_name: global_content.settings
+  parent: system.admin_config_system
+  weight: 300
+

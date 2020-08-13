@@ -1,0 +1,19 @@
+add global content entities:
+  title: 'Create new Global content entities'
+
+administer global content entities:
+  title: 'Administer Global content entities'
+  description: 'Allow to access the administration form to configure Global content entities.'
+  restrict access: true
+
+delete global content entities:
+  title: 'Delete Global content entities'
+
+edit global content entities:
+  title: 'Edit Global content entities'
+
+view published global content entities:
+  title: 'View published Global content entities'
+
+view unpublished global content entities:
+  title: 'View unpublished Global content entities'

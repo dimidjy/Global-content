@@ -1,0 +1,5 @@
+entity.global_content.add_form:
+  route_name: entity.global_content.add_form
+  title: 'Add Global content'
+  appears_on:
+    - entity.global_content.collection

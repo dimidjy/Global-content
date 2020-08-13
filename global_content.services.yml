@@ -1,0 +1,3 @@
+services:
+ global_content.global_content_service:
+   class: Drupal\global_content\GlobalContentService

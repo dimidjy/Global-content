@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Contains global_content.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function global_content_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the global_content module.
+    case 'help.page.global_content':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module that provide content that availbale globaly on each hook and twig template') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function global_content_preprocess(&$variables, $hook, $info) {
+  $global_content = \Drupal::service('global_content.global_content_service')->get_content();
+  $variables['global_content'] = $global_content;
+}
+
+/**
+ * Implements hook_preprocess_views_view().
+ */
+function global_content_preprocess_views_view(&$variables)  {
+  $global_content = \Drupal::service('global_content.global_content_service')->get_content();
+  $variables['global_content'] = $global_content;
+}
+
+function _global_content_code_defined_variables()
+{
+  $code_defined_variables = array();
+  
+  /*
+  * Put your variables on $code_defined_variables array
+  */
+
+  return $code_defined_variables;
+}

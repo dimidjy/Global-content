@@ -1,0 +1,23 @@
+uuid: 8c573842-39e7-4f18-93be-b174bfbd8c6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - global_content
+_core:
+  default_config_hash: 8OPAitzncwMoJFKbffkkDbEkkbSr8lErO7p4eg_XqEE
+id: global_content.field_plain_text
+field_name: field_plain_text
+entity_type: global_content
+type: string
+settings:
+  max_length: 500
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
